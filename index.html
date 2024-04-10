@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MY FIRST WEBSITE </title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="links">
+                <img src="logo.png" alt="Logo">
+                <a href="relationshipadvice.html">Advices</a>
+                <a href="fashionstyle.html">Fashion and Style</a>
+                <a href="beautyselfcare.html">Beauty and Selfcare</a>
+                <a href="#">Soulful Inspiration</a>
+            </div>
+
+            <div class="menu">
+                <button>About</button>
+                <div class="submenu">
+                    <a href="#">Personal Information</a>
+                    <a href="#">Her Experiences</a>
+                    <a href="#">Her Advice</a>
+                </div>
+            </div>
+        </header>
+        <br><br><br>
+
+        
+
+       
+        <br><br><br><br><br><br><br>
+        <h class="h"> Your Safe Space to Flourish, Glow, and Conquer Every Challenge. </h>
+     
+        <br><br><br>
+    
+    
+        <a href="#" class="Login" onclick="openModal('loginModal')">Log In</a>
+        <a href="#" class="SignUp" onclick="openModal('signupModal')">Sign Up</a>
+        
+
+<!-- Login form modal -->
+<div id="loginModal" class="modal">
+        <div class="modal-content">
+        <div class="modal-title">
+            Welcome back!
+        <span class="close-icon" onclick="closeModal('loginModal')">
+        <img src="D:/MYFIRSTWEBSITE/images/close (2).png" alt="Close">
+        </span>
+        </div>
+
+<form action="login.html" method="post">
+            <br><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+<br>
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+</div>
+
+
+<!-- Sign up form modal -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            Don't have an account yet? 
+            <span class="close-icon" onclick="closeModal('signupModal')">
+                <img src="imageclose.png" alt="Close">
+            </span>
+        </div>
+    
+      
+        <form action="signup.html" method="post">
+            <br>
+            <label for="newEmail">Email:</label>
+            <input type="email" id="newEmail" name="newEmail" required><br>
+
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required><br>
+
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required><br>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                closeModal('loginModal');
+            }
+        };
+    </script>
+</body>
+</html>
+<br><br><br><br><br><br><br>
+
+        <div class="tile" id="tile2">
+            <button class="left-button">See More...</button>
+            <p>I'm Kataryn.JG, the author of this website. I am a 21-year-old Computer Science student at Citi Global College, living in Sta. Rosa, Laguna.This website is my passion project, created just for amazing women like you.</p>
+         
+        </div>
+      
+
+        <div class="tile" id="tile3">
+            <button class="center-button">Explore..</button>
+            <p>a safe place for Filipina women looking for inspiration, help, and friendship. Dive into our collection of stories, advice, and tools made just for you. Let's celebrate our strength, toughness, and shared history as we face life's ups and downs. Welcome, Babes!</p>
+        </div>
+
+        <div class="tile" id="tile4">
+            <button class="right-button">See More...</button>
+            <p>Life can be a journey filled with challenges, and I've been through it all—struggling with confidence, facing heartbreak, and figuring out what it means to be the 'ideal' woman. I want this space to be your go-to for inspiration, advice, and the sense of community we all crave.
+
+                Together, let's code a life with a solid backbone, where we think, love, and stand strong. I'm here to share experiences, provide advice, and create a space where we can support each other and find peace of mind.
+                Welcome to my safe space! I'm excited to connect and conquer together.</p>
+        </div>
+
+        <script src="firstpage.js">
+        
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+     
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                closeModal('loginModal');
+                closeModal('signupModal');
+            }
+        };
+    </script>
+
+
+        </script>
+    </div>
+    <footer>
+        <p>&copy; 2024 TALITHA. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
